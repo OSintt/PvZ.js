@@ -5,6 +5,7 @@ Object.defineProperty(exports, "__esModule", {
 const _nodeHttp = require("node:http");
 const _graphqlYoga = require("graphql-yoga");
 const _indexJs = require("./schemas/index.js");
+require("./db");
 const yoga = (0, _graphqlYoga.createYoga)({
     schema: _indexJs.schema
 });
